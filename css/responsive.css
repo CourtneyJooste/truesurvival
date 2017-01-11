@@ -1,3 +1,26 @@
+@media only screen and (max-width: 961px){
+
+	.float-tr-bot{  
+	top: -200px;
+	/*Medium: -200px and sm: -125px*/
+}
+.meet-text{
+	margin-top: -250px; 
+	/*Medium: -250px and sm: -100px*/
+}
+}
+
+@media only screen and (max-width: 643px){
+	.float-tr-bot{  
+	top: -125px;
+	/*Medium: -200px and sm: -125px*/
+}
+.meet-text{
+	margin-top: -100px; 
+	/*Medium: -250px and sm: -100px*/
+}
+}
+
 @media only screen and (max-width: 608px){
 nav#menu span.fa.fa-bars {
 left: 60px;
@@ -9,6 +32,7 @@ white-space: inherit;
 .hover-bg .hover-text {
 padding: 15% 0;
 }
+
 }
 
 @media only screen and (max-width: 460px){
@@ -29,6 +53,7 @@ padding: 20% 0;
 }
 }
 @media only screen and (max-width: 360px){
+
 h1 {
     font-size: 36px;
 }
