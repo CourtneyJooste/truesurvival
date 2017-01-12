@@ -453,10 +453,24 @@ a.btn.send-btn:hover{
 	background: rgba(34, 34, 34, 0.85);
 	height: auto;
 	min-height: 200px;
-	padding: 10% 0 ;
+	/*padding: 20% 0;*/
 	color: #ffffff;
 }
 
+.top-slice-space {
+	width: 100%;
+	height: 200px;
+	padding-bottom: 50px;
+
+}
+
+
+.bot-slice-space {
+	width: 100%;
+	height: 200px;
+	padding-top: 50px;
+
+}
 ul, ol{
 	padding: 0;
 	moz-padding: 0;
