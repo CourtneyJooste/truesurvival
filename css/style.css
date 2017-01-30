@@ -1,12 +1,24 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
 @import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+/*@import url(../fonts/square721-bt-roman.ttf);*/
+/*@import url(../fonts/square-721-bold-extended-bt.ttf);*/
+
+@font-face {
+  font-family: 'Square';
+  src: url(../fonts/square721-bt-roman.ttf);
+}
+
+@font-face {
+  font-family: 'Square-Bold';
+  src: url(../fonts/square-721-bold-extended-bt.ttf);
+}
 
 body, html{
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: auto;
   overflow-x: hidden;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Square', sans-serif;
 }
 @media (min-width: 1200px){
 	.container {
@@ -29,38 +41,45 @@ body, html{
 h1{
 	font-weight: 700;
 	font-size: 100px;
+	font-family: 'Square-Bold', sans-serif;
 }
 
 h2{
 	text-transform: uppercase;
 	font-size: 20px;
+	font-family: 'Square-Bold', sans-serif;
 }
 h3{
 	font-size: 14px;
 	font-style: italic;
 	font-weight: 100;
 	line-height: 26px;
+	font-family: 'Square-Bold', sans-serif;
 }
 
 h4{
 	text-transform: uppercase;
 	font-size: 16px;
 	word-spacing: 2px;
+	font-family: 'Square-Bold', sans-serif;
 }
 h5{
 	text-transform: uppercase;
 	font-size: 12px;
 	word-spacing: 2px;
+	font-family: 'Square-Bold', sans-serif;
 }
 h6{
 	text-transform: uppercase;
 	font-size: 10px;
 	word-spacing: 2px;
 	letter-spacing: 2px;
+	font-family: 'Square-Bold', sans-serif;
 }
 
 p{
 	font-weight: 400;
+	font-size: 15px;
 }
 hr{
 	width: 50px;
@@ -117,7 +136,7 @@ a:focus{
 	padding-top: 16%;
 }
 .content2{
-	padding-top: 10%;
+	padding-top: 8%;
 }
 .header-text.btn{
 	border: 1px solid #ffffff;
@@ -351,6 +370,7 @@ a.btn.go-to-btn:hover{
 	width: 100%;
 	opacity: 0;
     transition: all 0.5s;
+    padding: 30px 5px 30px 5px;
 }
 .hover-bg .hover-text>h5{
 	opacity: 0;
@@ -386,7 +406,24 @@ a.btn.go-to-btn:hover{
 	margin: 0 auto
 }
 
-.hover-text p.lead{
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.hover-text .lead{
 	color: #BD0000;
 }
 
@@ -545,6 +582,14 @@ ul.clients li{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	text-align: center;
+}
+
+.testimonials-div{
+
+}
+
+.testimonials-div strong{
+	color: #BD0000;
 }
 
 #testimonials .overlay{
