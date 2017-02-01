@@ -360,6 +360,7 @@ a.btn.go-to-btn:hover{
 }
 
 .hover-bg .hover-text {
+	z-index: 5;
 	position: absolute;
 	text-align: center;
 	margin: 0 auto;
@@ -416,6 +417,19 @@ a.btn.go-to-btn:hover{
 .middle {
     display: table-cell;
     vertical-align: middle;
+}
+.hover-title{
+	text-align: center;
+	position: absolute;
+	bottom: 5px;
+	color: red;
+	width: 100%;
+	z-index: 3;
+}
+
+.hover-bg img{
+	min-height: 280px;
+    object-fit: cover;
 }
 .maps{
 	padding-top: 20px;
