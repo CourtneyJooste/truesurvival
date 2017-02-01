@@ -417,7 +417,41 @@ a.btn.go-to-btn:hover{
     display: table-cell;
     vertical-align: middle;
 }
+.maps{
+	padding-top: 20px;
+	height: 550px;
+	text-align: center;
+}
 
+.map1title{
+    float: left;
+    width: 50%;
+	text-align: center;
+}
+
+.map2title{
+	float: right;
+    width: 50%;
+	text-align: center;
+}
+
+
+#map1 
+{
+    width: 50%;
+    height: 400px;
+    float: left;
+    border-style: solid;
+    /*border-right: thick double #BD0000;*/
+}
+
+#map2 {
+	width: 50%;
+	height: 400px;
+	float: right;
+    border-style: solid;
+    border-left: none;
+}
 .inner {
     margin-left: auto;
     margin-right: auto; 
