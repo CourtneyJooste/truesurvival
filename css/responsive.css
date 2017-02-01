@@ -33,9 +33,8 @@ white-space: inherit;
 padding: 15% 0;
 }
 
-}
-
 @media only screen and (max-width: 460px){
+
 h3 {
     font-size: 12px;
 }
