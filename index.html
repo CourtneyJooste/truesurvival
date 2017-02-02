@@ -503,7 +503,7 @@ confrontational situation is essential.<br><br>Click to have a look at our avail
                         <textarea id="msg-txt" class="form-control" rows="4" placeholder="Message*"></textarea>
                         <div class="g-recaptcha" data-sitekey="6LdtHBQUAAAAAE9mP2MHjSdH9WjsGDnAxL3cU2zA"></div>
                         <div class="text-right">
-                            <a onClick="sendMessage()" class="btn send-btn">Send</a>
+                            <a onClick="sendMessage()" id="submit-btn" class="btn send-btn">Send</a>
                         </div>
                     </form>
                 </div>
@@ -561,18 +561,21 @@ confrontational situation is essential.<br><br>Click to have a look at our avail
     <script type="text/javascript" src="js/main.js"></script>
 
     <script>
-
+        var isDisabled = false;
         function sendMessage() {
+            if(isDisabled === false) {
+              isDisabled = true;
+              alert('starting');
               var name = document.getElementById("name-txt").value;
               var email = document.getElementById("email-txt").value;
               var subj = document.getElementById("subj-txt").value;
               var msg = document.getElementById("msg-txt").value;
-              var num = document.getElementById("num-txt").value;
+              var num = document.getElementById("num-txt").value;             
 
               if(name !== "" && email !== "" && msg !== ""){
-                // alert(name + "\n" +  email + "\n" + subj + "\n" + msg + "\n" + num);
                   emailjs.send("mailjet", "true_survival", {"name":name,"email":email,"subject":subj,"msg":msg,"cell":num})
                   .then(function(response) {
+                     isDisabled = false;
                      alert("Message sent successfully!");
                      document.getElementById("name-txt").value = "";
                      document.getElementById("email-txt").value = "";
@@ -580,19 +583,14 @@ confrontational situation is essential.<br><br>Click to have a look at our avail
                      document.getElementById("msg-txt").value = "";
                      document.getElementById("num-txt").value = "";
                   }, function(err) {
-                     console.log("An error occured!");
+                     isDisabled = false;
+                     alert("An error occured!");
                   });
               } else {
+                isDisabled = false;
                 alert("Please fill in all required fields");
               }
-
-              // emailjs.send("mailjet", "true_survival", {"name":"fsa","email":"das","subject":"das","msg":"das","cell":"dsa"})
-              // .then(function(response) {
-              //    console.log("SUCCESS. status=%d, text=%s", response.status, response.text);
-              // }, function(err) {
-              //    console.log("FAILED. error=", err);
-              // });
-
+            }
         }
     </script>
 
