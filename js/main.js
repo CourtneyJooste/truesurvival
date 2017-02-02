@@ -56,6 +56,11 @@ function main() {
 	      // itemsMobile : false
 	 
 	  });
+
+    // $("#send-message").addEventListener("click", sendMessage);
+
+    //SENDING EMAILS
+
 	 
 	});
  
