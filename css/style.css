@@ -775,3 +775,7 @@ nav#footer{
 }
 #footer a:hover{
 	color: #BD0000;}
+
+.visible-mobile{
+	display: none;
+}
