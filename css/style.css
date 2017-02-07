@@ -85,7 +85,7 @@ hr{
 	width: 50px;
 	border-color: #BD0000;
 }
-a {color: #222222}
+a {color: #BD0000}
 a:hover,
 a:focus{
 	color: #BD0000;
@@ -596,8 +596,11 @@ ul.clients li{
 	color: white;
 }
 
+
 .team-block{
 	min-height: 400px;
+	background-repeat:no-repeat;
+    background-size:cover;
 }
 
 /*.teambg {

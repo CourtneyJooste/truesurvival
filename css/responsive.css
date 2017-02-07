@@ -9,8 +9,20 @@
 	/*Medium: -250px and sm: -100px*/
 }
 }
+@media only screen and (max-width: 768px){
+
+	.mobile-padding {
+		margin-left: 120px;
+		margin-right: 120px;
+	}
+}
 
 @media only screen and (max-width: 643px){
+
+	.mobile-padding {
+		margin-left: 60px;
+		margin-right: 60px;
+	}
 	.float-tr-bot{  
 	top: -125px;
 	/*Medium: -200px and sm: -125px*/
@@ -22,6 +34,11 @@
 }
 
 @media only screen and (max-width: 608px){
+
+	.mobile-padding {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
 nav#menu span.fa.fa-bars {
 left: 60px;
 }
@@ -35,6 +52,10 @@ padding: 15% 0;
 
 @media only screen and (max-width: 460px){
 
+	.mobile-padding {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
 h3 {
     font-size: 12px;
 }
