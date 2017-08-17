@@ -3,7 +3,7 @@
 $(document).ready(function(){});
 
 function initialize() {
-    var myLatlng1 = new google.maps.LatLng(-34.088162, 18.842384);
+    var myLatlng1 = new google.maps.LatLng(-34.080013, 18.847993);
     var mapOptions = {
         zoom : 16,
         center : myLatlng1,
@@ -14,7 +14,7 @@ function initialize() {
     var map = new google.maps.Map(document.getElementById('map1'),
             mapOptions);
 
-    var contentString1 = 'TRUE Survival Somerset West'
+    var contentString1 = '<b>TRUE Survival Somerset West</b><br>159 Main Road'
 
     var infowindow = new google.maps.InfoWindow({});
 
@@ -41,7 +41,7 @@ function initialize() {
     var map2 = new google.maps.Map(document.getElementById('map2'),
             mapOptions2);
 
-    var contentString2 = 'TRUE Survival Stellenbosch'
+    var contentString2 = '<b>TRUE Survival Stellenbosch</b><br>Van Der Stel'
 
     var infowindow = new google.maps.InfoWindow({});
 
