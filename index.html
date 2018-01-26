@@ -582,7 +582,7 @@ confrontational situation is essential.<br><br>Click to have a look at our avail
               var num = document.getElementById("num-txt").value;
 
               if(name !== "" && email !== "" && msg !== ""){
-                  emailjs.send("mailjet", "true_survival", {"name":name,"email":email,"subject":subj,"msg":msg,"cell":num})
+                  emailjs.send("mailgun", "true_survival", {"name":name,"email":email,"subject":subj,"msg":msg,"cell":num})
                   .then(function(response) {
                      isDisabled = false;
                      toastr.success('Thanks for your message!', 'We will be in contact shortly.');
